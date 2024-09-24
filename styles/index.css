@@ -1,0 +1,131 @@
+:root{
+    --blue-ribbon: #145af7;
+    --charcoal: #4c4a4a;
+    --ghost: #efefef;
+    --mint: #3ce8b1;
+}
+body{
+    font-family: "Didact Gothic", sans-serif;
+    margin: 0;
+}
+/***header***/
+header{
+    background-color: var(--ghost);
+    padding: 0px;
+    padding-bottom: 30px;
+}
+/*navbar*/
+nav{
+    background-color: var(--charcoal);
+    border-bottom: 8px solid var(--blue-ribbon);
+}
+.menu{
+    background-color: var(--charcoal);
+    overflow: hidden;
+}
+.menu a{
+    float: right;
+    color: var(--ghost);
+    text-decoration: none;
+    padding: 20px;
+}
+.menu a:hover{
+    color: var(--blue-ribbon);
+    transition: color 0.5s linear;
+}
+#active{
+    color: var(--blue-ribbon);
+}
+header h1{
+    margin-left: 10px;
+}
+/***main***/
+main{
+    background-color: var(--ghost);
+    padding: 10px;
+}
+/*greeting*/
+.greeting{
+    margin-bottom: 10px;
+}
+.greeting h3{
+    margin-bottom: 10px;
+}
+.greeting p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+/*projects*/
+.projects-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.project-widget{
+    border: 3px solid var(--blue-ribbon);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    max-width: 45%;
+}
+.project-widget img{
+    width: 100%;
+}
+.project-widget h5{
+    margin: 5px;
+}
+.project-widget p{
+    margin: 8px;
+}
+/*contact*/
+.contact-me p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.contact-widget{
+    border: 3px solid var(--charcoal);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    max-width: 45%;
+}
+.contact-widget h5{
+    margin: 5px;
+}
+.contact-widget p{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.contact-widget a{
+    text-decoration: none;
+    color: var(--charcoal);
+}
+/***footer***/
+footer{
+    background-color: var(--charcoal);
+    color: var(--ghost);
+    border-top: 8px solid var(--blue-ribbon);
+    padding: 10px;
+    text-align: center;
+}
+.contact{
+    text-align: left;
+}
+.contact-header{
+    border-bottom: 2px solid var(--blue-ribbon);
+    color: var(--ghost);
+    text-decoration: none;
+}
