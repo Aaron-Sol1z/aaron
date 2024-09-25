@@ -69,6 +69,7 @@ main{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
+    padding-bottom: 15px;
     max-width: 45%;
 }
 .project-widget img{
@@ -79,6 +80,14 @@ main{
 }
 .project-widget p{
     margin: 8px;
+}
+.project-widget a{
+    border: 2px solid black;
+    background-color: var(--blue-ribbon);
+    color: var(--ghost);
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
 }
 /*contact*/
 .contact-me p{
