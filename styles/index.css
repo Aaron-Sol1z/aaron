@@ -5,7 +5,7 @@
     --mint: #3ce8b1;
 }
 body{
-    font-family: "Didact Gothic", sans-serif;
+    font-family: "Gothic A1", sans-serif;
     margin: 0;
 }
 /***header***/
@@ -64,7 +64,7 @@ main{
     justify-content: center;
 }
 .project-widget{
-    border: 3px solid var(--blue-ribbon);
+    border: 3px solid var(--charcoal);
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -82,7 +82,6 @@ main{
     margin: 8px;
 }
 .project-widget a{
-    border: 2px solid black;
     background-color: var(--blue-ribbon);
     color: var(--ghost);
     text-decoration: none;
@@ -106,8 +105,7 @@ main{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-bottom: 15px;
     text-align: center;
     max-width: 45%;
 }
@@ -117,10 +115,15 @@ main{
 .contact-widget p{
     margin-left: 0px;
     margin-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .contact-widget a{
+    background-color: var(--blue-ribbon);
+    color: var(--ghost);
     text-decoration: none;
-    color: var(--charcoal);
+    padding: 5px;
+    margin: 5px;
 }
 /***footer***/
 footer{
@@ -137,4 +140,5 @@ footer{
     border-bottom: 2px solid var(--blue-ribbon);
     color: var(--ghost);
     text-decoration: none;
+    font-weight: bold;
 }

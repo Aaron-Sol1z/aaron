@@ -5,7 +5,7 @@
     --mint: #3ce8b1;
 }
 body{
-    font-family: "Didact Gothic", sans-serif;
+    font-family: "Gothic A1", sans-serif;
     margin: 0;
 }
 /***header***/
@@ -72,10 +72,9 @@ main img{
     justify-content: center;
 }
 .tech-list p{
-    
     padding-left: 20px;
     padding-right: 20px;
-    padding: 5px;
+    padding: 8px;
     margin: 5px;
     border: 3px solid var(--charcoal);
 }
@@ -113,4 +112,5 @@ footer{
     border-bottom: 2px solid var(--blue-ribbon);
     color: var(--ghost);
     text-decoration: none;
+    font-weight: bold;
 }

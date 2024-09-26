@@ -5,7 +5,7 @@
     --mint: #3ce8b1;
 }
 body{
-    font-family: "Didact Gothic", sans-serif;
+    font-family: "Gothic A1", sans-serif;
     margin: 0;
 }
 /***header***/
@@ -49,9 +49,12 @@ main{
     margin-left: 25px;
     margin-right: 25px;
 }
+.about-me a{
+    color: black;
+}
 /*skills*/
 .skills span{
-    border: 3px solid black;
+    border: 3px solid var(--charcoal);
     padding: 5px;
     margin: 5px;
 }
@@ -68,6 +71,9 @@ main{
 .education-container{
     margin-left: 25px;
     margin-right: 25px;
+}
+.education-container p{
+    font-weight: bold;
 }
 /*contact*/
 .contact-me p{
@@ -86,21 +92,26 @@ main{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+
+    padding-bottom: 15px;
     text-align: center;
     max-width: 45%;
 }
-.contact-widget h5{
+.contact-widget h4{
     margin: 5px;
 }
 .contact-widget p{
     margin-left: 0px;
     margin-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .contact-widget a{
+    background-color: var(--blue-ribbon);
+    color: var(--ghost);
     text-decoration: none;
-    color: var(--charcoal);
+    padding: 5px;
+    margin: 5px;
 }
 /***footer***/
 footer{
@@ -117,4 +128,5 @@ footer{
     border-bottom: 2px solid var(--blue-ribbon);
     color: var(--ghost);
     text-decoration: none;
+    font-weight: bold;
 }
