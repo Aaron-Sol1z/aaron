@@ -74,6 +74,7 @@ main{
 }
 .project-widget img{
     width: 100%;
+    border-bottom: 3px solid var(--charcoal);
 }
 .project-widget h5{
     margin: 5px;
