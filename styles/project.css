@@ -2,58 +2,58 @@
     --blue-ribbon: #145af7;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
+    --green: #2df613;
 }
 body{
     font-family: "Gothic A1", sans-serif;
     font-size: 18px;
     margin: 0;
-}
-/***header***/
-header{
     background-color: var(--ghost);
-    padding: 0px;
-    padding-bottom: 30px;
 }
-/*navbar*/
-nav{
-    background-color: var(--charcoal);
-    border-bottom: 8px solid var(--blue-ribbon);
-}
-.menu{
-    background-color: var(--charcoal);
+/*header*/
+header{
+    position: sticky;
+    top: 0;
     overflow: hidden;
+    background-color: var(--charcoal);
+    border-bottom: 8px solid var(--green);
 }
-.menu-justify{
-    float: right;
-}
-.menu a{
+header a{
     float: left;
+    display: block;
     color: var(--ghost);
     text-decoration: none;
-    padding: 20px;
+    padding: 14px;
 }
-.menu a:hover{
-    color: var(--blue-ribbon);
+header a:hover{
+    color: var(--green);
     transition: color 0.5s linear;
+    cursor: pointer;
 }
 #active{
-    color: var(--blue-ribbon);
+    color: var(--green);
 }
-header h1{
-    margin-left: 10px;
-}
-/***main***/
+/*main*/
 main{
     background-color: var(--ghost);
-    padding: 10px;
+    padding: 10%;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-duration: 2s;
 }
 main img{
     border: 3px solid var(--charcoal);
 }
+@keyframes fadeInOpacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 /*description*/
 .description{
-    margin-left: 25px;
-    margin-right: 25px;
     overflow: auto;
 }
 /*links*/
@@ -74,29 +74,20 @@ main img{
     padding-bottom: 30px;
 }
 /*tech stack*/
-.tech-list{
-    padding-left: 25px;
-    padding-right: 25px;
+.tech-stack{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
     overflow: auto;
 }
 .tech{
-    border: 3px solid var(--charcoal);
     padding: 5px;
     margin: 5px;
     font-size: 20px;
 }
-.tech i{
+.fa-brands.fa-html5.fa-lg, .fa-brands.fa-css3.fa-lg,
+.fa-brands.fa-js.fa-lg, .fa-brands.fa-react.fa-lg{
     color: var(--blue-ribbon);
-}
-/*skills learned*/
-.skills{
-    margin-left: 25px;
-    margin-right: 25px;
-    overflow: auto;
 }
 /*back to home*/
 .back-to-home{
@@ -113,11 +104,10 @@ main img{
     text-decoration: none;
     color: var(--ghost);
 }
-/***footer***/
 footer{
     background-color: var(--charcoal);
     color: var(--ghost);
-    border-top: 8px solid var(--blue-ribbon);
+    border-top: 8px solid var(--green);
     padding: 10px;
     text-align: center;
     overflow: auto;
@@ -126,12 +116,12 @@ footer{
     text-align: left;
 }
 .contact-header{
-    border-bottom: 2px solid var(--blue-ribbon);
+    border-bottom: 2px solid var(--green);
     color: var(--ghost);
     text-decoration: none;
     font-weight: bold;
 }
-/*Responsive css*/
+/*responsive css*/
 @media (max-width:520px){
     body{
         font-size: 16px;
