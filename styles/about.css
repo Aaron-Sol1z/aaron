@@ -130,6 +130,9 @@ footer{
     text-align: center;
     overflow: auto;
 }
+footer a{
+    text-decoration: none;
+}
 .footer-contact{
     text-align: left;
 }

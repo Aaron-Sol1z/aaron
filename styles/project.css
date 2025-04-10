@@ -112,6 +112,9 @@ footer{
     text-align: center;
     overflow: auto;
 }
+footer a{
+    text-decoration: none;
+}
 .contact{
     text-align: left;
 }
