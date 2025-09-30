@@ -17,6 +17,7 @@ header{
     overflow: hidden;
     background-color: var(--charcoal);
     border-bottom: 8px solid var(--green);
+    z-index: 1;
 }
 header a{
     float: left;
@@ -41,7 +42,7 @@ main{
     animation-name: fadeInOpacity;
     animation-duration: 2s;
 }
-main img{
+main video{
     border: 3px solid var(--charcoal);
 }
 @keyframes fadeInOpacity{

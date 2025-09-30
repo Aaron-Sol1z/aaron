@@ -17,6 +17,7 @@ header{
     overflow: hidden;
     background-color: var(--charcoal);
     border-bottom: 8px solid var(--green);
+    z-index: 1;
 }
 header a{
     float: left;
