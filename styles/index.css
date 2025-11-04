@@ -1,5 +1,6 @@
 :root{
     --blue-ribbon: #145af7;
+    --light-blue-ribbon: #1498f7;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
     --green: #2df613;
@@ -83,14 +84,22 @@ h2{
     margin: 8px;
     flex-grow: 1;
 }
-.project-widget span{
-    display: inline-block;
-}
-.project-widget a{
-    background-color: var(--blue-ribbon);
-    color: var(--ghost);
-    text-decoration: none;
+
+/*NEW LINK BUTTONS*/
+.project-widget a, .contact-card a{
+    border: 3px solid var(--blue-ribbon);
     padding: 5px;
+    color: var(--charcoal);
+    text-decoration: none;
+    position: relative;
+    background-image: linear-gradient(to left, transparent 50%, var(--blue-ribbon) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.project-widget a:hover, .contact-card a:hover{
+    background-position: 0% 0;
+    color: var(--ghost);
 }
 /*contact*/
 .contact-me p{
@@ -118,12 +127,6 @@ h2{
 }
 .contact-card span{
     text-align: center;
-}
-.contact-card a{
-    background-color: var(--blue-ribbon);
-    color: var(--ghost);
-    text-decoration: none;
-    padding: 5px;
 }
 .contact-container{
     margin-left: 25px;

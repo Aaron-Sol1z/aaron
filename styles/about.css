@@ -1,5 +1,6 @@
 :root{
     --blue-ribbon: #145af7;
+    --light-blue-ribbon: #1498f7;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
     --green: #2df613;
@@ -103,10 +104,19 @@ h2{
     text-align: center;
 }
 .contact-card a{
-    background-color: var(--blue-ribbon);
-    color: var(--ghost);
-    text-decoration: none;
+    border: 3px solid var(--blue-ribbon);
     padding: 5px;
+    color: var(--charcoal);
+    text-decoration: none;
+    position: relative;
+    background-image: linear-gradient(to left, transparent 50%, var(--blue-ribbon) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.contact-card a:hover{
+    background-position: 0% 0;
+    color: var(--ghost);
 }
 .contact-container{
     margin-left: 25px;

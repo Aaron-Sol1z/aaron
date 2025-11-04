@@ -1,5 +1,6 @@
 :root{
     --blue-ribbon: #145af7;
+    --light-blue-ribbon: #1498f7;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
     --green: #2df613;
@@ -63,8 +64,12 @@ main video{
 }
 .links span{
     background: var(--blue-ribbon);
+    transition: background-color 0.5s ease;
     padding: 10px;
     display: inline-block;
+}
+.links span:hover{
+    background-color: var(--light-blue-ribbon);
 }
 .links a{
     background-color: var(--blue-ribbon);
@@ -97,8 +102,12 @@ main video{
 }
 .back-to-home span{
     background: var(--blue-ribbon);
+    transition: background-color 0.5s ease;
     padding: 10px;
     display: inline-block;
+}
+.back-to-home span:hover{
+    background-color: var(--light-blue-ribbon);
 }
 .back-to-home a{
     background-color: var(--blue-ribbon);
