@@ -1,9 +1,8 @@
 :root{
-    --blue-ribbon: #145af7;
-    --light-blue-ribbon: #1498f7;
+    --blue-ribbon: #0742c0;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
-    --green: #2df613;
+    --green: #aaf99f;
 }
 body{
     font-family: "Gothic A1", sans-serif;
@@ -84,8 +83,6 @@ h2{
     margin: 8px;
     flex-grow: 1;
 }
-
-/*NEW LINK BUTTONS*/
 .project-widget a, .contact-card a{
     border: 3px solid var(--blue-ribbon);
     padding: 5px;
@@ -116,7 +113,7 @@ h2{
     width: 100%;
     padding-bottom: 20px;
 }
-.contact-card h5{
+.contact-card h3{
     text-align: center;
     margin: 5px;
 }
@@ -200,5 +197,27 @@ footer a{
     .project-widget, .contact-card{
         max-width: 100%;
         margin: 10px 0px;
+    }
+}
+/*preferences*/
+@media (prefers-reduced-motion: reduce){
+    main{
+        animation: none !important;
+    }
+    .project-widget a, .contact-card a{
+        transition: none;
+        background-color: var(--blue-ribbon);
+        color: var(--ghost);
+    }
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --blue-ribbon: #f8bd3f;
+        --charcoal: #b3b5b5;
+        --ghost: #101010;
+        --green: #550660;
+    }
+    main{
+        color: var(--charcoal);
     }
 }

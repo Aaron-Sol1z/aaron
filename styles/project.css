@@ -1,9 +1,9 @@
 :root{
-    --blue-ribbon: #145af7;
-    --light-blue-ribbon: #1498f7;
+    --blue-ribbon: #0742c0;
+    --light-blue-ribbon: #145af7;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
-    --green: #2df613;
+    --green: #aaf99f;
 }
 body{
     font-family: "Gothic A1", sans-serif;
@@ -45,6 +45,9 @@ main{
 }
 main video{
     border: 3px solid var(--charcoal);
+}
+figcaption{
+    text-align: center;
 }
 @keyframes fadeInOpacity{
     0%{
@@ -166,5 +169,26 @@ footer a{
     }
     .contact-widget{
         max-width: 75%;
+    }
+}
+/*preferences*/
+@media (prefers-reduced-motion: reduce){
+    main{
+        animation: none !important;
+    }
+    .links span:hover, .back-to-home span:hover{
+        background-color: var(--blue-ribbon);
+    }
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --blue-ribbon: #f8bd3f;
+        --light-blue-ribbon: #eb6708;
+        --charcoal: #b3b5b5;
+        --ghost: #101010;
+        --green: #550660;
+    }
+    main{
+        color: var(--charcoal);
     }
 }

@@ -1,9 +1,8 @@
 :root{
-    --blue-ribbon: #145af7;
-    --light-blue-ribbon: #1498f7;
+    --blue-ribbon: #0742c0;
     --charcoal: #4c4a4a;
     --ghost: #efefef;
-    --green: #2df613;
+    --green: #aaf99f;
 }
 body{
     font-family: "Gothic A1", sans-serif;
@@ -45,6 +44,9 @@ main{
 h2{
     text-align: center;
 }
+.link-to-projects{
+    color: var(--blue-ribbon);
+}
 /*skills*/
 .tech-list{
     display: flex;
@@ -53,6 +55,7 @@ h2{
     overflow: auto;
 }
 .tech{
+    display: inline-block;
     padding: 5px;
     margin: 5px;
     font-size: 20px;
@@ -62,6 +65,7 @@ h2{
 .fa-brands.fa-github.fa-lg, .fa-brands.fa-python.fa-lg,
 .fa-brands.fa-java.fa-lg, .fa-sharp.fa-solid.fa-c.fa-lg,
 .fa-solid.fa-folder-tree.fa-lg, .fa-solid.fa-database.fa-lg,
+.fa-brands.fa-accessible-icon.fa-lg, .fa-solid.fa-mobile.fa-lg,
 .fa-brands.fa-docker.fa-lg, .fa-solid.fa-computer.fa-lg,
 .fa-solid.fa-globe.fa-lg, .fa-solid.fa-hexagon-nodes.fa-lg,
 .fa-solid.fa-pencil.fa-lg, .fa-solid.fa-comments.fa-lg,
@@ -189,5 +193,27 @@ footer a{
     .contact-card{
         max-width: 100%;
         margin: 10px 0px;
+    }
+}
+/*preferences*/
+@media (prefers-reduced-motion: reduce){
+    main{
+        animation: none !important;
+    }
+    .contact-card a{
+        transition: none;
+        background-color: var(--blue-ribbon);
+        color: var(--ghost);
+    }
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --blue-ribbon: #f8bd3f;
+        --charcoal: #b3b5b5;
+        --ghost: #101010;
+        --green: #550660;
+    }
+    main{
+        color: var(--charcoal);
     }
 }
