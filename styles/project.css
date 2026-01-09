@@ -43,6 +43,9 @@ main{
     animation-name: fadeInOpacity;
     animation-duration: 2s;
 }
+h1{
+    font-size: 2em;
+}
 main video{
     border: 3px solid var(--charcoal);
 }

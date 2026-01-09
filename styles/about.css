@@ -41,6 +41,9 @@ main{
     animation-name: slideRight;
     animation-duration: 2s;
 }
+h1{
+    font-size: 2em;
+}
 h2{
     text-align: center;
 }
